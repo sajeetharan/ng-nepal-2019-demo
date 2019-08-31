@@ -33,8 +33,8 @@ export class Gabc extends Phaser.GameObjects.Sprite {
   }
 
   async callCognitiveServices(blob) {
-    const url = 'https://southeastasia.api.cognitive.microsoft.com/face/v1.0/detect';
-    const apiKey = '';
+    const url = 'https://westus.api.cognitive.microsoft.com/face/v1.0/detect';
+    const apiKey = 'cedf1aff0a78473a9f6a71a90a0d7ace';
 
     const response = await fetch(`${url}?returnFaceId=true&returnFaceLandmarks=false&returnFaceAttributes=emotion`, {
       method: 'post',
